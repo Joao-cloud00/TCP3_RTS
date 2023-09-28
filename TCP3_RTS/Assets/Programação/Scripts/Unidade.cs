@@ -8,9 +8,11 @@ public class Unidade : MonoBehaviour
     private Transform posicaoDoTorreInicial;
     public float velocidadeDoInimigo;
     private Vector3 posicaoTorre;
+    private MovimentaçãoJogador scriptMov;
     void Start()
     {
-        if(gameObject.tag == "Vermelha")
+        scriptMov = GetComponent<MovimentaçãoJogador>();
+        if (gameObject.tag == "Vermelha")
         {
             posicaoDoTorreInicial = GameObject.FindGameObjectWithTag("TorreAzul").transform;
             posicaoTorre = posicaoDoTorreInicial.transform.position;
@@ -31,9 +33,12 @@ public class Unidade : MonoBehaviour
 
     private void SeguirJogador()
     {
-        if (posicaoDoTorreInicial.gameObject != null)
+        if(this.gameObject == scriptMov.unidade)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posicaoTorre, velocidadeDoInimigo * Time.deltaTime);
+            this.gameObject.transform.position = Vector3.MoveTowards(transform.position, scriptMov.point, velocidadeDoInimigo * Time.deltaTime);
+            //if (posicaoDoTorreInicial.gameObject != null)
+            //{
+            //}
         }
     }
 }
