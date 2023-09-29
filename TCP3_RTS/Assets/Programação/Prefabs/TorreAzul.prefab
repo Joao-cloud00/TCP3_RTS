@@ -121,6 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unidadeAzul: {fileID: 6686554916790103229, guid: 1e5aa116d1567c0499a6a2443704574d, type: 3}
   unidadeVerm: {fileID: 6686554916790103229, guid: 10b079a05d284da45852328200df9b56, type: 3}
+  vida: 10
 --- !u!54 &6435127714548607505
 Rigidbody:
   m_ObjectHideFlags: 0
