@@ -19,29 +19,13 @@ public class Torres : MonoBehaviour
 
     void Update()
     {
-        posicaoSpawn = gameObject.transform.position;
-        int aleatorio = Random.Range(3, -3);
-        posicaoSpawn.z -= aleatorio;
-        posicaoSpawn.x -= aleatorio;
-        posicaoSpawn.y = 0.5f;
-        tempo += Time.deltaTime;
         if (gameObject.tag == "TorreVermelho")
         {
             faccao = "Vermelha";
-            if(tempo >= 4)
-            {
-                Instantiate(unidadeVerm, posicaoSpawn, Quaternion.identity);
-                tempo = 0;
-            }
         }
         if (gameObject.tag == "TorreAzul")
         {
             faccao = "Azul";
-            if (tempo >= 4)
-            {
-                Instantiate(unidadeAzul, posicaoSpawn, Quaternion.identity);
-                tempo = 0;
-            }
         }
         if(vida == 0)
         {
