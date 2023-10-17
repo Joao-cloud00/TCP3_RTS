@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Level GD/Scenes/MatheusScene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
