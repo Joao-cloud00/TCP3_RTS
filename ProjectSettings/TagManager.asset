@@ -10,6 +10,8 @@ TagManager:
   - TorreVermelho
   - TorreAzul
   - Construcao
+  - Grid
+  - Unit
   layers:
   - Default
   - TransparentFX

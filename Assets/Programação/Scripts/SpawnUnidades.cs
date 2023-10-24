@@ -28,7 +28,7 @@ public class SpawnUnidades : MonoBehaviour
             //verifica se o raio atingiu algo
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log("VASCO");
+                
                 // Verifique se o objeto atingido é uma construção (pode usar outro tipo de verificação ao invés de Tag)
                 if (hit.collider.CompareTag("Construcao")) 
                 {
