@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404991538068773623}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,10 +43,9 @@ GameObject:
   - component: {fileID: 8399342661521716027}
   - component: {fileID: 7659118402530157083}
   - component: {fileID: 918124743092240337}
-  - component: {fileID: 6686554916790103229}
   - component: {fileID: 5336243921153394162}
   - component: {fileID: -4468555852898847813}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UnidadeAzul
   m_TagString: Azul
   m_Icon: {fileID: 0}
@@ -140,19 +139,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6686554916790103229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2649072017224049484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf6c39d23b9b2446b4159b921218720, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 5
 --- !u!114 &5336243921153394162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,8 +151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d722c15b3f12fde4396ed6cf0693199b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: {fileID: 404991538068773623}
-  unidade: {fileID: 0}
+  _speed: 5
+  Player:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &-4468555852898847813
 Rigidbody:
   m_ObjectHideFlags: 0

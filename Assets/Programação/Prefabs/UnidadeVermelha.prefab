@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 8399342661521716027}
   - component: {fileID: 7659118402530157083}
   - component: {fileID: 918124743092240337}
-  - component: {fileID: 6686554916790103229}
-  - component: {fileID: 5468381196840802402}
+  - component: {fileID: 8530008192271254042}
   - component: {fileID: -5875383719376140824}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UnidadeVermelha
-  m_TagString: Vermelha
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,20 +108,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6686554916790103229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2649072017224049484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf6c39d23b9b2446b4159b921218720, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDoInimigo: 5
---- !u!114 &5468381196840802402
+--- !u!114 &8530008192271254042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,8 +120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d722c15b3f12fde4396ed6cf0693199b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: {fileID: 4609391803817073400}
-  unidade: {fileID: 0}
+  _speed: 5
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
+  Ground:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!54 &-5875383719376140824
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -161,7 +152,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 52
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!1 &6438169314330596741
 GameObject:
@@ -172,10 +163,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4609391803817073400}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -187,10 +178,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6438169314330596741}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9202665098840853741}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}

@@ -8,7 +8,6 @@ using UnityEngine;
 public class Torres : MonoBehaviour
 {
     [SerializeField]
-    private Unidade unidadeAzul,unidadeVerm;
     float tempo;
     public int vida = 10;
     Vector3 posicaoSpawn;
