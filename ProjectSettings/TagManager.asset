@@ -12,16 +12,17 @@ TagManager:
   - Construcao
   - Grid
   - Unit
+  - Estrutura
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - Placement
   - Water
   - UI
   - FogOfWar
   - Ground
-  - 
+  - Player
   - 
   - 
   - 
