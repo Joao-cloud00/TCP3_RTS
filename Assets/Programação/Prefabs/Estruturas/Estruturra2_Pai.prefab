@@ -40,6 +40,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6172644377173161155}
     m_Modifications:
+    - target: {fileID: 1235726414636815358, guid: 592e1405f06e9ba4599b100e34732161, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.091
+      objectReference: {fileID: 0}
     - target: {fileID: 7047826307735715888, guid: 592e1405f06e9ba4599b100e34732161, type: 3}
       propertyPath: m_Name
       value: estrutura2

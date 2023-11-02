@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovimentacaoJogador : MonoBehaviour
 {
     private Vector3 targetPosition;
-    private bool isMoving = false;
+    //private bool isMoving = false;
     public float _speed;
     public LayerMask Player;
     public LayerMask Ground;
@@ -46,7 +46,7 @@ public class MovimentacaoJogador : MonoBehaviour
     void SelectUnit(Transform unit)
     {
         targetPosition = unit.position;
-        isMoving = true;
+        //isMoving = true;
         Debug.Log("Unidade selecionada: " + unit.name);
     }
 

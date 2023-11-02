@@ -28,7 +28,7 @@ public class AtivarInterface : MonoBehaviour
                 
                 if (hit.collider.CompareTag("Unit"))
                 {
-                    print("Botao Esquerdo cclicado");
+                    //print("Botao Esquerdo clicado");
                     prefabInterface.SetActive(true);
                 }
             }
@@ -56,7 +56,7 @@ public class AtivarInterface : MonoBehaviour
             //        //transform.position = destino;
             //    }
             //}
-            print("Botão direito clicado");
+            //print("Botão direito clicado");
             prefabInterface.SetActive(false);
         }
 
