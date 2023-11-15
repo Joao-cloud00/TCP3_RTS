@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class MovimentacaoJogador : MonoBehaviour
@@ -7,12 +8,15 @@ public class MovimentacaoJogador : MonoBehaviour
     private Vector3 targetPosition;
     //private bool isMoving = false;
     public float _speed;
+    private UnitStats stats;
     public LayerMask Player;
     public LayerMask Ground;
 
     private void Start()
     {
+        stats = gameObject.GetComponent<UnitStats>();
         targetPosition = transform.position;
+        _speed = stats.Velocidade;
     }
 
     void Update()
