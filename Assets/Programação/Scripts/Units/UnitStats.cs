@@ -17,7 +17,7 @@ public class UnitStats : MonoBehaviour
     private float reduzDano;
     [SerializeField]
     private float cooldown = 3;
-    public int VidaAtual;
+    public float VidaAtual;
     public int Armadura;
     public float DanoStats;
     public float Dano;
@@ -26,7 +26,7 @@ public class UnitStats : MonoBehaviour
     public int EspiritualidadeMaxima;
     public float EspiritualidadeAtual;
 
-    private void Start()
+    private void Awake()
     {
         VidaAtual = VidaMaxima;
         EspiritualidadeAtual = EspiritualidadeMaxima;
@@ -61,7 +61,7 @@ public class UnitStats : MonoBehaviour
         VidaAtual -= (valorDano - ((int)reduzDano) / 100);
     }
 
-    public void GanharVida(int valorVida)
+    public void GanharVida(float valorVida)
     {
         VidaAtual += valorVida;
     }

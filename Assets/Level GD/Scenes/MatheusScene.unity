@@ -304,6 +304,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2649072017224049484, guid: 10b079a05d284da45852328200df9b56, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1508636836}
+    - targetCorrespondingSourceObject: {fileID: 2649072017224049484, guid: 10b079a05d284da45852328200df9b56, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 1508636838}
   m_SourcePrefab: {fileID: 100100000, guid: 10b079a05d284da45852328200df9b56, type: 3}
 --- !u!1001 &239440789
 PrefabInstance:
@@ -79398,6 +79401,21 @@ MonoBehaviour:
   Velocidade: 2
   EspiritualidadeMaxima: 0
   EspiritualidadeAtual: 0
+--- !u!114 &1508636838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107321069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2742983026d292d4cb2f1d4dc351323f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaInicial: 0
+  vidaChange: 0
+  cooldown: 0
 --- !u!1001 &1540853403
 PrefabInstance:
   m_ObjectHideFlags: 0

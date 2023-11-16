@@ -4,29 +4,56 @@ using UnityEngine;
 
 public class Saumao : MonoBehaviour
 {
-    private int vidaInicial;
+    [SerializeField]
+    private float vidaInicial;
+    [SerializeField]
+    private float vidaChange;
     private float DanoAtual;
+    private float DanoInicial;
     private UnitStats stats;
     [SerializeField]
-    private int cooldown;
+    private float cooldown;
+    private bool Iscooldown;
     private void Start()
     {
         stats = GetComponent<UnitStats>();
         vidaInicial = stats.VidaAtual;
-        DanoAtual = stats.DanoStats;
-        DanoAtual += 15;
+        DanoInicial = stats.DanoStats;
+        DanoAtual = DanoInicial + 15;
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
+            Debug.Log("Funcionando");
             CalculoVida();
-            stats.GanharVida(vidaInicial);
+            CalcularDano();
+            Iscooldown = true;
         }
-    }
+        if(Iscooldown == true)
+        {
+            cooldown = Time.time;
+            if (cooldown > 5) 
+            {
+                Iscooldown = false;
+                cooldown = 0;
+                stats.MudarDano(DanoInicial);
+            }
+        }
 
+    }
     void CalculoVida()
     {
-        vidaInicial = vidaInicial * (20 / 100);
+        vidaChange = vidaInicial * (0.2f);
+        stats.GanharVida(vidaChange);
+    }
+
+    void CalcularDano()
+    {
+        if( DanoAtual == DanoInicial + 15)
+        {
+            stats.MudarDano(DanoInicial);
+        }
+        stats.MudarDano(DanoAtual);
     }
 }
