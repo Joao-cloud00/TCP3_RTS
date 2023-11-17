@@ -73,4 +73,25 @@ public class UnitController : MonoBehaviour
     {
         _unitsInScene.Add(unit);
     }
+
+    public static IResourcesReceiver GetClosestResourceReceiver (ResourceType resource, Vector3 relativeTo)
+    {
+        float minDistance = Mathf.Infinity;
+        StorageBuilding closest = null;
+
+        foreach(BaseUnit unit in _unitsInScene)
+        {
+            if(unit is IResourcesReceiver)
+            {
+                float currentDistance = Vector3.Distance(unit.transform.position, relativeTo);
+                if(currentDistance < minDistance && (unit as IResourcesReceiver).AcceptResource(resource))
+                {
+                    closest = unit as StorageBuilding;
+                    minDistance = currentDistance;
+                }
+            }
+        }
+
+        return closest as IResourcesReceiver;
+    }
 }

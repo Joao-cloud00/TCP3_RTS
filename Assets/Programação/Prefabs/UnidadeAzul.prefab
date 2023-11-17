@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 8399342661521716027}
   - component: {fileID: 7659118402530157083}
   - component: {fileID: 918124743092240337}
-  - component: {fileID: 5336243921153394162}
   - component: {fileID: -4468555852898847813}
   m_Layer: 3
   m_Name: UnidadeAzul
@@ -139,22 +138,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5336243921153394162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2649072017224049484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d722c15b3f12fde4396ed6cf0693199b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 5
-  Player:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!54 &-4468555852898847813
 Rigidbody:
   m_ObjectHideFlags: 0
