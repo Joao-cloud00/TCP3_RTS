@@ -13,6 +13,7 @@ TagManager:
   - Grid
   - Unit
   - Estrutura
+  - MinaGold
   layers:
   - Default
   - TransparentFX

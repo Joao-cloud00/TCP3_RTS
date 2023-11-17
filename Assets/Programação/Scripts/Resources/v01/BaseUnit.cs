@@ -27,6 +27,6 @@ public class BaseUnit : MonoBehaviour
 
     public void Start()
     {
-        UnitController.AddBaseUnitToList(this);
+        //UnitController.AddBaseUnitToList(this);
     }
 }

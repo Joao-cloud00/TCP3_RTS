@@ -98,7 +98,7 @@ public class UnitStats : MonoBehaviour
         float MinDano;
         MaxDano = (DanoStats * 1.5f) * tier;
         MinDano = (DanoStats * tier);
-        randomDano = Random.RandomRange(MinDano, MaxDano);
+        randomDano = Random.Range(MinDano, MaxDano);
         Dano = randomDano;
     }
 
