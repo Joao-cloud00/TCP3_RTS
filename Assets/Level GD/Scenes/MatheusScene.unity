@@ -301,6 +301,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c7d8c85d03716429332cb7783c0382, type: 3}
+--- !u!1 &317271842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8948191832441062014, guid: ff5e5685cf5f0bd439757e2f65ff4908, type: 3}
+  m_PrefabInstance: {fileID: 6229970441417738354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &383984601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366,13 +371,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2407422999992737230, guid: 1e5aa116d1567c0499a6a2443704574d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2649072017224049484, guid: 1e5aa116d1567c0499a6a2443704574d, type: 3}
       propertyPath: m_Name
       value: UnidadeAzul
       objectReference: {fileID: 0}
     - target: {fileID: 2649072017224049484, guid: 1e5aa116d1567c0499a6a2443704574d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649072017224049484, guid: 1e5aa116d1567c0499a6a2443704574d, type: 3}
       propertyPath: m_TagString
-      value: Azul
+      value: Unit
       objectReference: {fileID: 0}
     - target: {fileID: 9202665098840853741, guid: 1e5aa116d1567c0499a6a2443704574d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79443,7 +79456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tier: 0
   movimentos: Vermelho
-  VidaMaxima: 0
+  VidaMaxima: 100
   reduzDano: 0
   cooldown: 3
   VidaAtual: 0
@@ -79752,16 +79765,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnidadeVermelha
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5887705831927031217, guid: ff5e5685cf5f0bd439757e2f65ff4908, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8948191832441062014, guid: ff5e5685cf5f0bd439757e2f65ff4908, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 6369682834559007689}
   m_SourcePrefab: {fileID: 100100000, guid: ff5e5685cf5f0bd439757e2f65ff4908, type: 3}
 --- !u!4 &6369682834559007687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2220862469905677782, guid: ff5e5685cf5f0bd439757e2f65ff4908, type: 3}
   m_PrefabInstance: {fileID: 6229970441417738354}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6369682834559007689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317271842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4336ec032535c764ea80942a3195b0a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Unit:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

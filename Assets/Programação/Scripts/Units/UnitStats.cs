@@ -82,6 +82,11 @@ public class UnitStats : MonoBehaviour
         }
     }
 
+    public void AtualizarArmadura(int NovaArmadura)
+    {
+        Armadura = NovaArmadura;
+    }
+
     #endregion
 
     #region "Dano Stats"
