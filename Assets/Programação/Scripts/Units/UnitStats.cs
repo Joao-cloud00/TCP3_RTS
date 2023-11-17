@@ -10,7 +10,7 @@ public class UnitStats : MonoBehaviour
     [SerializeField]
     private int tier;
     [SerializeField]
-    private string[] movimentos;
+    public string movimentos;
     [SerializeField]
     private int VidaMaxima;
     [SerializeField]
@@ -30,12 +30,7 @@ public class UnitStats : MonoBehaviour
     {
         VidaAtual = VidaMaxima;
         EspiritualidadeAtual = EspiritualidadeMaxima;
-
-        movimentos = new string[4];
-        movimentos[0] = "Agua";
-        movimentos[1] = "Terra";
-        movimentos[2] = "Hibridos";
-        movimentos[3] = "Ar";
+        Debug.Log(movimentos);
     }
 
     private void Update()
